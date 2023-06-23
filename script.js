@@ -52,13 +52,19 @@ const playRound = (playerSelection, computerSelection) => {
     (playerSelection === "paper" && computerSelection === "scissors");
 
   if (playerWins) {
-    console.log(`You win! ${playerSelection} beats ${computerSelection}`);
+    console.log(
+      `You win this round! ${playerSelection} beats ${computerSelection}.`
+    );
     return "Player wins";
   } else if (computerWins) {
-    console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
+    console.log(
+      `You lose this round! ${computerSelection} beats ${playerSelection}.`
+    );
     return "Computer wins";
   } else {
-    console.log(`${playerSelection} and ${computerSelection}. It's a tie!`);
+    console.log(
+      `${playerSelection} and ${computerSelection}. It's a tie this round!`
+    );
     return "It's a tie";
   }
 };
@@ -86,11 +92,11 @@ const game = () => {
   }
 
   if (playerTotalWins > computerTotalWins) {
-    console.log("You win!");
+    console.log("You win the game!");
   } else if (computerTotalWins > playerTotalWins) {
-    console.log("You lose!");
+    console.log("You lose the game!");
   } else {
-    console.log("It's a tie!");
+    console.log("The game is a tie!");
   }
 };
 
