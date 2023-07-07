@@ -1,0 +1,54 @@
+body {
+  background-color: #00ffff20;
+  font-family: sans-serif;
+  text-align: center;
+}
+.game {
+  font-size: 3rem;
+}
+
+.title {
+  font-size: 3 rem;
+  margin: 2rem;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 75%;
+  gap: 20px auto;
+}
+
+.btn {
+  padding: 20px o;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.btn[data-type="rock"] {
+  background-color: #bada55;
+  color: #fff;
+}
+
+.btn[data-type="paper"] {
+  background-color: #c01100;
+  color: #fff;
+}
+
+.btn[data-type="scissors"] {
+  background-color: #c011ee;
+  color: #fff;
+}
+
+.output {
+  font-size: 2em;
+  margin-top: 50px;
+}
